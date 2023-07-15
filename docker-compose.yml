@@ -1,0 +1,17 @@
+services:
+  alist:
+    build: alist
+    ports: 
+      - 80:5244
+    environment:
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_USER=${DB_USER}
+      - DB_PASS=${DB_PASS}
+      - DB_TABLE_PREFIX=${DB_TABLE_PREFIX}
+      - DB_NAME=${DB_NAME}
+    volumes:
+      - .:/home
+
+volumes:
+  data:
