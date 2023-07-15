@@ -10,6 +10,8 @@ services:
       - DB_PASS=${DB_PASS}
       - DB_TABLE_PREFIX=${DB_TABLE_PREFIX}
       - DB_NAME=${DB_NAME}
+      - DB_TYPE=${DB_TYPE}
+      - DB_SLL_MODE=${DB_SLL_MODE}
     volumes:
       - .:/home
 
