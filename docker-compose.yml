@@ -12,6 +12,7 @@ services:
       - DB_NAME=${DB_NAME}
       - DB_TYPE=${DB_TYPE}
       - DB_SLL_MODE=${DB_SLL_MODE}
+      - CDN=${CDN}
     volumes:
       - .:/home
 
